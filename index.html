@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Calculadora de Propinas</title>
+
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">SPLI <br>TTER</h1>
+  </header>
+  
+  <section class="calculator__container">    
+    <div class="input-section">
+      <label for="bill" class="input-section__bill-label">Bill / Consumisión</label>
+      <input type="number" id="bill" class="input-section__bill-input" value="10000">
+
+      <fieldset class="btns">
+        <legend class="btns__legend">Select Tip / Elegir Propina %</legend>
+        <button class="btns__button">5%</button>
+        <button class="btns__button btns__button--selected">10%</button>
+        <button class="btns__button">15%</button>
+        <button class="btns__button">20%</button>
+        <button class="btns__button">25%</button>
+        <input type="number" class="btns__custom" placeholder="Custom">
+      </fieldset>
+      <label for="people" class="input-section__people-label">Number of People / Comensales <span id="alert"></span></label>
+      <input type="number" id="people" min="1" class="input-section__people-input" value="4">
+    </div>
+
+    <div class="result-section">
+      <div class="results">
+
+        <div>
+          <p class="results__tip-amount">Tip/Propina</p>
+          <p class="results__tip-person">/person</p>
+        </div>
+        <p class="results__tip-value">0</p>
+        <div>
+          <p class="results__total-amount">Total</p>
+          <p class="results__total-person">/person</p>
+        </div>
+        <p class="results__total-value">0</p>
+      </div>
+      <button class="results-section__reset">RESET</button>
+    </div>  
+  </section>
+  
+  <footer class="attribution">
+    Challenge Frontendmentor - Coded by <a href="#">SGVcode</a>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
