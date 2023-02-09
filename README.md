@@ -14,7 +14,6 @@ y devuelve por participante el:
 
 HTML CSS (SASS) JS
 
-Link: https://proyectos.mscode.net.ar/tip-calculator-app
 [Link a la app](https://proyectos.mscode.net.ar/tip-calculator-app){:target="_blank"}
 
 
