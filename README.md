@@ -14,7 +14,7 @@ y devuelve por participante el:
 
 HTML CSS (SASS) JS
 
-[Tip-Calculator](https://proyectos.mscode.net.ar/tip-calculator-app){:target="_blank"}
+🌎 [Tip-Calculator](https://proyectos.mscode.net.ar/tip-calculator-app)
 
 ## Screenshot
 ![brave_ys2QUqAIvl](https://user-images.githubusercontent.com/106033066/213885369-8b17e5eb-bbe1-4cfc-a563-be3d7781dfc3.png)
