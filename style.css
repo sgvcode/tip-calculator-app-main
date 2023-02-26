@@ -48,7 +48,6 @@ body {
   border-radius: 10px;
   margin-bottom: 20px;
   caret-color: hsl(189deg, 41%, 97%);
-  -moz-appearance: textfield;
 }
 .input-section__bill-input:hover, .input-section__bill-input:focus, .input-section__people-input:hover, .input-section__people-input:focus {
   cursor: pointer;
@@ -109,7 +108,6 @@ body {
   width: 147px;
   height: 50px;
   cursor: pointer;
-  -moz-appearance: textfield;
 }
 .btns__custom::-webkit-inner-spin-button {
   -webkit-appearance: none;
