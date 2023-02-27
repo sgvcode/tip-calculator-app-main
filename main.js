@@ -60,7 +60,7 @@ people.addEventListener('input', ()=>{
 
   if (peopleNumber == 0 || isNaN(peopleNumber)){
     people.style.borderColor = 'brown';
-    alert.classList.add('error');  
+    alert.classList.add('error');
   }else{
     alert.classList.remove('error');
     people.style.borderColor = 'hsl(189,41%,97%)';
@@ -80,17 +80,12 @@ resetBtn.addEventListener('click', ()=>{
 })
 
 function calculateTip(){
-  //Calculo de Tip Amount
-  if (billNumber === 0 || peopleNumber === 0) {
-    tipResult.innerText = "0";
+  //Calculo de Tip Amount y Total
+  if(billNumber === 0 || peopleNumber === 0){
+    tipResult.innerText = 0 ;
+    totalResult.innerText = 0;
   } else {
     tipResult.innerText = ((billNumber * tipValue / 100) / peopleNumber).toFixed(2);
-  }
-
-  //Calculo de Total
-  if (peopleNumber === 0) {
-    totalResult.innerText = "0";
-  } else {
     totalResult.innerText = (((billNumber * tipValue / 100) + billNumber) / peopleNumber).toFixed(2);
   }
 }
