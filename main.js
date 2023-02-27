@@ -81,7 +81,7 @@ resetBtn.addEventListener('click', ()=>{
 
 function calculateTip(){
   //Calculo de Tip Amount
-  if (billNumber === 0) {
+  if (billNumber === 0 || peopleNumber === 0) {
     tipResult.innerText = "0";
   } else {
     tipResult.innerText = ((billNumber * tipValue / 100) / peopleNumber).toFixed(2);
