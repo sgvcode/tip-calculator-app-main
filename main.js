@@ -71,18 +71,26 @@ people.addEventListener('input', ()=>{
 //Boton Reset
 let resetBtn = document.querySelector('.results-section__reset');
 resetBtn.addEventListener('click', ()=>{
-  bill.value = 0;
+  bill.value = "";
   billNumber = 0;
-  people.value = 4;
-  peopleNumber = 4;
+  people.value = "";
+  peopleNumber = 0;
   custom.value = 'Custom';
   calculateTip();
 })
 
 function calculateTip(){
   //Calculo de Tip Amount
-  tipResult.innerText = ((billNumber * tipValue / 100) / peopleNumber).toFixed(2);
+  if (billNumber === 0) {
+    tipResult.innerText = "0";
+  } else {
+    tipResult.innerText = ((billNumber * tipValue / 100) / peopleNumber).toFixed(2);
+  }
 
   //Calculo de Total
-  totalResult.innerText = (((billNumber * tipValue / 100) + billNumber) / peopleNumber).toFixed(2);
+  if (peopleNumber === 0) {
+    totalResult.innerText = "0";
+  } else {
+    totalResult.innerText = (((billNumber * tipValue / 100) + billNumber) / peopleNumber).toFixed(2);
+  }
 }

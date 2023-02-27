@@ -49,6 +49,11 @@ body {
   margin-bottom: 20px;
   caret-color: hsl(189deg, 41%, 97%);
 }
+
+.input-section__bill-input::placeholder, .input-section__people-input::placeholder {
+  color: hsl(182, 21%, 77%);
+}
+
 .input-section__bill-input:hover, .input-section__bill-input:focus, .input-section__people-input:hover, .input-section__people-input:focus {
   cursor: pointer;
   border: 1px solid hsl(172deg, 67%, 45%);
